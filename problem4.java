@@ -3,9 +3,11 @@ public class problem4 {
         //Maximum and Minnimum of array.
         int[] arr = {94, 73, 56, 23, 33, 28, 10, 11, 9, 5, 2, -3, -5};
         int n = arr.length;
-        //O(n);
+        //O(nlogn);
         // Arrays.sort(arr);
         // System.out.println(arr[0] + " " + arr[n-1]);
+
+        //o(n);
         int max_num = Integer.MIN_VALUE;
         int min_num = Integer.MAX_VALUE;
         for(int i = 0; i < n; i++){
