@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class problem4 {
     public static void main(String[] args) {
         //Maximum and Minnimum of array.
