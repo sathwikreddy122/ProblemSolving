@@ -1,23 +1,24 @@
 public class Matrix_trance {
     public static void main(String[] args) {
-        int[][] mat = {{1, 8, 9,}, {2, 7, 10}, {3, 6, 11}};
-        int rows = 3;
-        int cols = 3;
-        int[][] transpose = new int[rows][cols];
-        int i = 0;
-        while(i < rows){
-            int j = 0;
-            while(j < cols){
-                transpose[i][j] = mat[j][i];
-                j++;
+//         5 10
+// 99, 41, 20, 13, 76, 43, 24, 59, 23, 90
+// 79 57 84 85 34 2 48 34 92 92
+// 92 63 31 10 56 81 11 29 41 71
+// 76 99 43 87 29 57 94 1 44 19
+// 92 35 75 57 42 68 1 82 29 64
+// 90 92 71 19 64 23 92 41 44 29 59 34 29 1 82 24 48 11 94 1 43 2 81 57 68 76 34 56 29 42 13 85 10 87 57 20 84 31 43 75 41 57 63 99 35 99 79 92 76 92
+       int rows = 5;
+        int cols = 10;
+        int[][] mat = {{99, 41, 20, 13, 76, 43, 24, 59, 23, 90},
+                        {79, 57, 84, 85, 34, 2, 48, 34, 92, 92},
+                        {92, 63, 31, 10, 56, 81, 11, 29, 41, 71},
+                        {76, 99, 43, 87, 29, 57, 94, 1, 44, 19},
+                        {92, 35, 75, 57, 42, 68, 1, 82, 29, 64}
+                    };
+        for(int j = cols-1; j >= 0; j--){
+            for(int i = 0; i < rows; i++){
+                System.out.print(mat[i][j] + " ");
             }
-            i++;
-        }
-        for(int k = 0; k < rows; k++){
-            for(int s = 0; s < cols; s++){
-                System.out.print(transpose[k][s] + " ");
-            }
-            System.out.println();
         }
     }
 }
